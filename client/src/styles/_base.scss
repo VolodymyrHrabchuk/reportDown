@@ -1,0 +1,113 @@
+
+html {
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #f8f8f8 #17182e;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #17182e;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    border: 0px none #ffffff;
+  }
+  scroll-behavior: smooth;
+}
+
+body {
+  // @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  color: $blue;
+  margin: 0;
+  padding: 80px 0 30px;
+
+  &--white {
+    color: $white;
+  }
+}
+
+.heading::after {
+  content: "";
+  width: 30px;
+  display: block;
+  border: 2px solid $blue;
+  margin: 10px auto 0;
+}
+
+.heading--white::after {
+  content: "";
+  width: 30px;
+  display: block;
+  border: 2px solid $white;
+  margin: 10px auto 0;
+}
+
+.inner__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.bg {
+  background: url("../img/background-main.webp") center/100% no-repeat;
+  width: 100%;
+}
+
+.nav-link {
+  color: $white;
+  text-decoration: none;
+
+  &--blue {
+    color: $blue;
+  }
+}
+
+.link-btn {
+  color: $white;
+  text-decoration: none;
+
+  &--red {
+    color: $red;
+    text-decoration: none;
+  }
+}
+
+.media__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 150px;
+}

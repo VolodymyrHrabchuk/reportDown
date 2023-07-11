@@ -1,0 +1,11 @@
+$white: #ffffff;
+$red: #ea1a40;
+$blue: #17182e;
+$grey: #f8f8f8;
+
+@mixin text {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: $blue;
+}
